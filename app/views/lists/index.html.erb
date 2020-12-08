@@ -1,0 +1,16 @@
+<%= @list.errors.full_messages if @list.errors.any? %>
+
+<%= form_for List.new do |f| %>
+  <p>Lists</p>
+  <%=f.text_field :name %>
+  <%= f.submit %>
+<% end %>
+
+<ul>
+  <% @lists.each do |list|%>
+    <li>
+      <%= list.name %> 
+      <%= link_to "Todos", list_todos_path(list) %>
+    </li>
+  <% end %>
+</ul>

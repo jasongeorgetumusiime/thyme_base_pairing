@@ -1,0 +1,19 @@
+<%= @todo.errors.full_messages if @todo.errors.any? %>
+
+<%= form_for [@list, @todo] do |f| %>
+  <p>Todos for list <%= @list.name%></p>
+  <%= f.text_field :description %>
+  <%= f.submit %>
+<% end %>
+
+<ul>
+  <% @list.todos do |todo|%>
+    <li>
+      <%= todo.name %> 
+      <%= todo.status %>
+      <% if todo.status === Todo::INCOMPLETE %> 
+        <%= link_to "Mark as complete", "lists/list_id/todos", method: :patch %>
+      <% end %>
+    </li>
+  <% end %>
+</ul>

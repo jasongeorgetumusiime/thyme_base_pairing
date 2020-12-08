@@ -1,0 +1,476 @@
+Started GET "/" for ::1 at 2020-12-08 08:56:59 +0300
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/jason/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/jason/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.7ms | Allocations: 407)
+Completed 200 OK in 18ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 2406)
+
+
+Started GET "/" for ::1 at 2020-12-08 08:58:55 +0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/jason/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/jason/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 5.8ms | Allocations: 295)
+Completed 200 OK in 15ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 1703)
+
+
+DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
+ (called from block in execute at /home/jason/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281)
+Started GET "/" for ::1 at 2020-12-08 09:10:46 +0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/jason/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/jason/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.2ms | Allocations: 295)
+Completed 200 OK in 14ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 1703)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/" for ::1 at 2020-12-08 10:22:36 +0300
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/jason/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/jason/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.4ms | Allocations: 295)
+Completed 200 OK in 19ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 1703)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (18.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (31.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateLists (20201208072303)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "lists" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_lists_on_name" ON "lists" ("name")[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20201208072303"]]
+  [1m[35m (28.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-12-08 07:23:33.577349"], ["updated_at", "2020-12-08 07:23:33.577349"]]
+  [1m[35m (12.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateTodos (20201208073300)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "todos" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "description" varchar, "status" varchar, "list_id" bigint, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "atodos" ("id" integer NOT NULL PRIMARY KEY, "description" varchar DEFAULT NULL, "status" varchar DEFAULT NULL, "list_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "atodos" ("id","description","status","list_id","created_at","updated_at")
+                     SELECT "id","description","status","list_id","created_at","updated_at" FROM "todos"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "todos"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "todos" ("id" integer NOT NULL PRIMARY KEY, "description" varchar DEFAULT NULL, "status" varchar DEFAULT NULL, "list_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_18fb02510b"
+FOREIGN KEY ("list_id")
+  REFERENCES "lists" ("id")
+)[0m
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "todos" ("id","description","status","list_id","created_at","updated_at")
+                     SELECT "id","description","status","list_id","created_at","updated_at" FROM "atodos"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "atodos"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mprimary::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20201208073300"]]
+  [1m[35m (27.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
+ (called from block in execute at /home/jason/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281)
+DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
+ (called from block in execute at /home/jason/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281)
+DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
+ (called from block in execute at /home/jason/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281)
+DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
+ (called from block in execute at /home/jason/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281)
+Started GET "/" for ::1 at 2020-12-08 10:50:12 +0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  Rendered lists/index.html.erb within layouts/application (Duration: 384.7ms | Allocations: 123026)
+Completed 500 Internal Server Error in 390ms (ActiveRecord: 0.0ms | Allocations: 124194)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `errors' for #<#<Class:0x000055ab0d968d00>:0x000055ab0d965010>):
+    1: <%= errors.full_messages if errors.any? %>
+    2: 
+    3: <% form_for List.new do |f| %>
+    4:   <%=f.text_field :name %>
+  
+app/views/lists/index.html.erb:1
+Started GET "/" for ::1 at 2020-12-08 10:51:08 +0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  Rendered lists/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 1992)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/jason/projects/thyme_base_paring/public/packs
+[Webpacker] Hash: 15d1bb7b54cf6326b9ba
+Version: webpack 4.44.2
+Time: 3111ms
+Built at: 12/08/2020 10:51:13 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-9afcbb5693aa87623e69.js    124 KiB  application  [emitted] [immutable]  application
+js/application-9afcbb5693aa87623e69.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-9afcbb5693aa87623e69.js js/application-9afcbb5693aa87623e69.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 5186ms (Views: 5174.4ms | ActiveRecord: 1.0ms | Allocations: 25534)
+
+
+Started GET "/" for ::1 at 2020-12-08 10:51:27 +0300
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  Rendered lists/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 538)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 13.1ms | ActiveRecord: 0.0ms | Allocations: 4878)
+
+
+Started GET "/" for ::1 at 2020-12-08 10:55:39 +0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:9
+  Rendered lists/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1292)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 27ms (Views: 14.7ms | ActiveRecord: 1.1ms | Allocations: 8519)
+
+
+Started GET "/" for ::1 at 2020-12-08 11:00:18 +0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:9
+  Rendered lists/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1196)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 14.0ms | ActiveRecord: 1.1ms | Allocations: 7505)
+
+
+Started POST "/lists" for ::1 at 2020-12-08 11:00:49 +0300
+Processing by ListsController#create as HTML
+  Parameters: {"authenticity_token"=>"62AZ+Vx6/XlBK6r3cY2nkieFa8AGr4FxlLQQqZlXzM3A0P9gI/I159CsQEp/76pkzqp0YLL4Y+Q3+A1PCXLZzA==", "list"=>{"name"=>"Pair programming"}, "commit"=>"Create List"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/lists_controller.rb:14:in `create'
+  [1m[36mList Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "lists" WHERE "lists"."name" = ? LIMIT ?[0m  [["name", "Pair programming"], ["LIMIT", 1]]
+  ↳ app/controllers/lists_controller.rb:14:in `create'
+  [1m[36mList Create (0.5ms)[0m  [1m[32mINSERT INTO "lists" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Pair programming"], ["created_at", "2020-12-08 08:00:49.908376"], ["updated_at", "2020-12-08 08:00:49.908376"]]
+  ↳ app/controllers/lists_controller.rb:14:in `create'
+  [1m[35m (25.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/lists_controller.rb:14:in `create'
+Redirected to http://localhost:3000/lists
+Completed 302 Found in 47ms (ActiveRecord: 26.4ms | Allocations: 6370)
+
+
+Started GET "/lists" for ::1 at 2020-12-08 11:00:49 +0300
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:9
+  Rendered lists/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1006)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 14.1ms | ActiveRecord: 0.3ms | Allocations: 4430)
+
+
+Started GET "/lists" for ::1 at 2020-12-08 11:01:37 +0300
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.1ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:9
+  Rendered lists/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1233)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 14.1ms | ActiveRecord: 0.1ms | Allocations: 5553)
+
+
+Started GET "/lists" for ::1 at 2020-12-08 11:02:11 +0300
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:10
+  Rendered lists/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1232)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 25.7ms | ActiveRecord: 0.2ms | Allocations: 5566)
+
+
+Started GET "/lists/list_id/todos" for ::1 at 2020-12-08 11:09:38 +0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/lists/list_id/todos"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
+ (called from block in execute at /home/jason/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281)
+Started GET "/lists/list_id/todos" for ::1 at 2020-12-08 11:12:32 +0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by TodosController#index as HTML
+  Parameters: {"list_id"=>"list_id"}
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:3:in `index'
+Completed 404 Not Found in 14ms (ActiveRecord: 1.4ms | Allocations: 2189)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find List with 'id'=list_id):
+  
+app/controllers/todos_controller.rb:3:in `index'
+Started GET "/lists/list_id/todos" for ::1 at 2020-12-08 11:12:42 +0300
+Processing by TodosController#index as HTML
+  Parameters: {"list_id"=>"list_id"}
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:3:in `index'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.2ms | Allocations: 1149)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find List with 'id'=list_id):
+  
+app/controllers/todos_controller.rb:3:in `index'
+Started GET "/lists/" for ::1 at 2020-12-08 11:12:46 +0300
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:10
+  Rendered lists/index.html.erb within layouts/application (Duration: 192.0ms | Allocations: 65735)
+Completed 500 Internal Server Error in 208ms (ActiveRecord: 0.4ms | Allocations: 68819)
+
+
+  
+ActionView::Template::Error (undefined method `lists_todos_path' for #<#<Class:0x00007f305401e790>:0x00007f305401c558>
+Did you mean?  list_todo_path
+               list_todos_path):
+    10:   <% @lists.each do |list|%>
+    11:     <li>
+    12:       <%= list.name %> 
+    13:       <%= link_to "Todos", lists_todos_path(list) %>
+    14:     </li>
+    15:   <% end %>
+    16: </ul>
+  
+app/views/lists/index.html.erb:13
+app/views/lists/index.html.erb:10
+Started GET "/lists/" for ::1 at 2020-12-08 11:12:57 +0300
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:10
+  Rendered lists/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1247)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 27ms (Views: 23.8ms | ActiveRecord: 0.2ms | Allocations: 5594)
+
+
+Started GET "/lists/1/todos" for ::1 at 2020-12-08 11:13:11 +0300
+Processing by TodosController#index as HTML
+  Parameters: {"list_id"=>"1"}
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:3:in `index'
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.2ms | Allocations: 2937)
+
+
+  
+NoMethodError (undefined method `todos' for #<List:0x000055ab0e901050>):
+  
+app/controllers/todos_controller.rb:4:in `index'
+Started GET "/lists/1/todos" for ::1 at 2020-12-08 11:13:49 +0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by TodosController#index as HTML
+  Parameters: {"list_id"=>"1"}
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:3:in `index'
+  Rendering todos/index.html.erb within layouts/application
+  Rendered todos/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1103)
+Completed 500 Internal Server Error in 119ms (ActiveRecord: 6.8ms | Allocations: 16320)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= @list.errors.full_messages if @list.errors.any? %>
+
+<%= form_for List.new do |f| %>
+  <p>Todos for list <%= @list.name%></p>
+  <%= f.text_field :description %>
+  <%= f.submit %>
+<% end %>
+
+<ul>
+  <% @lists.todos do |todo|%>
+    <li>
+      <%= todo.name %> <%= todo.status %>
+      <% if todo.status === "" %> 
+      <%= link_to "Mark as complete", "lists/list_id/todos", method: :patch %>
+    </li>
+  <% end %>
+</ul>
+):
+1:    <%= @list.errors.full_messages if @list.errors.any? %>
+2:    
+3:    <%= form_for List.new do |f| %>
+4:      <p>Todos for list <%= @list.name%></p>
+5:      <%= f.text_field :description %>
+6:      <%= f.submit %>
+7:    <% end %>
+8:    
+9:    <ul>
+10:      <% @lists.todos do |todo|%>
+11:        <li>
+12:          <%= todo.name %> <%= todo.status %>
+13:          <% if todo.status === "" %> 
+14:          <%= link_to "Mark as complete", "lists/list_id/todos", method: :patch %>
+15:        </li>
+16:      <% end %>
+17:    </ul>
+  
+app/views/todos/index.html.erb:19: syntax error, unexpected end-of-input, expecting `end'
+app/views/todos/index.html.erb:19: syntax error, unexpected end-of-input, expecting `end'
+app/views/todos/index.html.erb:19: syntax error, unexpected end-of-input, expecting `end'
+app/views/todos/index.html.erb:19: syntax error, unexpected end-of-input, expecting `end'
+app/views/todos/index.html.erb:19: syntax error, unexpected end-of-input, expecting `end'
+app/views/todos/index.html.erb:19: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/lists/1/todos" for ::1 at 2020-12-08 11:14:50 +0300
+Processing by TodosController#index as HTML
+  Parameters: {"list_id"=>"1"}
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:3:in `index'
+  Rendering todos/index.html.erb within layouts/application
+  Rendered todos/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1165)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.2ms | Allocations: 3103)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= @todo.errors.full_messages if @todo.errors.any? %>
+
+<%= form_for @todo do |f| %>
+  <p>Todos for list <%= @list.name%></p>
+  <%= f.text_field :description %>
+  <%= f.submit %>
+<% end %>
+
+<ul>
+  <% @lists.todos do |todo|%>
+    <li>
+      <%= todo.name %> <%= todo.status %>
+      <% if todo.status === "" %> 
+      <%= link_to "Mark as complete", "lists/list_id/todos", method: :patch %>
+    </li>
+  <% end %>
+</ul>
+):
+1:    <%= @todo.errors.full_messages if @todo.errors.any? %>
+2:    
+3:    <%= form_for @todo do |f| %>
+4:      <p>Todos for list <%= @list.name%></p>
+5:      <%= f.text_field :description %>
+6:      <%= f.submit %>
+7:    <% end %>
+8:    
+9:    <ul>
+10:      <% @lists.todos do |todo|%>
+11:        <li>
+12:          <%= todo.name %> <%= todo.status %>
+13:          <% if todo.status === "" %> 
+14:          <%= link_to "Mark as complete", "lists/list_id/todos", method: :patch %>
+15:        </li>
+16:      <% end %>
+17:    </ul>
+  
+app/views/todos/index.html.erb:19: syntax error, unexpected end-of-input, expecting `end'
+app/views/todos/index.html.erb:19: syntax error, unexpected end-of-input, expecting `end'
+app/views/todos/index.html.erb:19: syntax error, unexpected end-of-input, expecting `end'
+app/views/todos/index.html.erb:19: syntax error, unexpected end-of-input, expecting `end'
+app/views/todos/index.html.erb:19: syntax error, unexpected end-of-input, expecting `end'
+app/views/todos/index.html.erb:19: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/lists/1/todos" for ::1 at 2020-12-08 11:16:40 +0300
+Processing by TodosController#index as HTML
+  Parameters: {"list_id"=>"1"}
+  [1m[36mList Load (0.1ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:3:in `index'
+  Rendering todos/index.html.erb within layouts/application
+  Rendered todos/index.html.erb within layouts/application (Duration: 165.7ms | Allocations: 64122)
+Completed 500 Internal Server Error in 175ms (ActiveRecord: 0.1ms | Allocations: 66062)
+
+
+  
+ActionView::Template::Error (undefined method `todos_path' for #<#<Class:0x000055ab0eb56918>:0x000055ab0eb43930>
+Did you mean?  root_path):
+    1: <%= @todo.errors.full_messages if @todo.errors.any? %>
+    2: 
+    3: <%= form_for @todo do |f| %>
+    4:   <p>Todos for list <%= @list.name%></p>
+    5:   <%= f.text_field :description %>
+    6:   <%= f.submit %>
+  
+app/views/todos/index.html.erb:3
+Started GET "/lists/1/todos" for ::1 at 2020-12-08 11:17:57 +0300
+Processing by TodosController#index as HTML
+  Parameters: {"list_id"=>"1"}
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:3:in `index'
+  Rendering todos/index.html.erb within layouts/application
+  Rendered todos/index.html.erb within layouts/application (Duration: 20.8ms | Allocations: 4406)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.2ms | Allocations: 6351)
+
+
+  
+ActionView::Template::Error (undefined method `todos' for nil:NilClass):
+     7: <% end %>
+     8: 
+     9: <ul>
+    10:   <% @lists.todos do |todo|%>
+    11:     <li>
+    12:       <%= todo.name %> 
+    13:       <%= todo.status %>
+  
+app/views/todos/index.html.erb:10
+Started GET "/lists/1/todos" for ::1 at 2020-12-08 11:18:13 +0300
+Processing by TodosController#index as HTML
+  Parameters: {"list_id"=>"1"}
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:3:in `index'
+  Rendering todos/index.html.erb within layouts/application
+  Rendered todos/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 672)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 27ms (Views: 16.2ms | ActiveRecord: 0.2ms | Allocations: 5714)
+
+
